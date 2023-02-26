@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <title>Free Easy-Trip Website Template | Contact :: w3layouts</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+        <style>
+           
+       
+            textarea{
+                width: 570px;
+                font-size: 13px;
+                margin: 5px 0 30px 0;
+                border: 1px solid #f0f0f0;
+                color: #555;
+                background: #f0f0f0;
+                -webkit-border-radius: .2em;
+                -moz-border-radius: .2em;
+                border-radius: .2em;
+                outline: none;
+                margin-bottom: 25px;
+                height: 150px;
+                padding: 7px;
+                resize: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        
+        <div class="contact">
+            <div class="wrap">
+                <div class="contact-top">
+                    <h3>İletişim Bilgiler</h3>
+                    <p> Her hangi bir konuda sitenin admini ile iletişime geçmek isterseniz aşağıdaki iletişim kutularını ve bilgileri kullanabilirsiniz. </p> 
+                </div>
+                @Html.Action("Partial6","Iletisim")
+                <div class="clear"></div>
+                <div class="contact-bottom">
+                    <div class="contact-left">
+                        <div class="contact-add">
+                            <h1 class="h1" style="color:chocolate" 
+                                >Adres</h1>
+
+
+                            <br />
+                            <p>Telefon:1-22-5555</p>
+                            <br />
+
+                            <p>Email:<a href="mailto:signup@gmail.com">i@hotmail.com</a></p>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+    </body>
+    </html>

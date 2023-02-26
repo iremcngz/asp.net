@@ -1,0 +1,16 @@
+﻿@using Travel.Models.Sinif
+@model List<Travel.Models.Blog>
+
+@foreach(var x in Model) { 
+<div class="right">
+    <div class="bot-left">
+        <img src="@x.BlogImage" alt="" />
+    </div>
+    <div class="left-text">
+        <h4>@x.Baslik</h4>
+        <span class="doller">@x.Tarih</span>
+        <p>@x.Aciklama</p>
+        <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Devamını oku >></span></a></p>
+    </div>
+</div>
+}
